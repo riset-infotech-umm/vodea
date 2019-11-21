@@ -16,4 +16,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="Email">Email :</string>
+    <string name="Handphone">Handphone :</string>
+    <string name="AccountName">Account Name\'s</string>
+    <string name="nim">201810370311152</string>
+    <string name="DateBirth">Date Birth :</string>
+    <string name="dmy">dd-mm-yy</string>
+    <string name="nomorhp">085536544446</string>
+    <string name="surel">infotech@umm.ac.id</string>
 </resources>
