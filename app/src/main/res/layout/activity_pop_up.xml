@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    tools:context=".Home.PopUp.PopUp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/corner_edit_text"
+    android:backgroundTint="#FAF5F5"
+    android:paddingTop="8dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE VOTE"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:elevation="8dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:padding="12dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/corner_edit_text"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Description"
+        android:gravity="start"
+        android:paddingTop="12dp"
+        android:paddingLeft="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/corner_edit_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:hint="Option 1 Name's ..."
+
+                android:padding="12dp"
+                android:textSize="12sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/corner_edit_text"
+                />
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="20dp"
+                android:hint="delete"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/corner_edit_text"
+                android:backgroundTint="#F61140"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:hint="Option 1 Name's ..."
+
+                android:padding="12dp"
+                android:textSize="12sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/corner_edit_text"
+                />
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="20dp"
+                android:hint="delete"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/corner_edit_text"
+                android:backgroundTint="#F61140"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:hint="add Option"
+            android:layout_gravity="end"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/corner_edit_text"
+            android:backgroundTint="#3079CC"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_edit_text"
+        android:backgroundTint="#F7941E"
+        android:hint="Set Vote"
+        android:textColorHint="@android:color/white"
+        android:layout_margin="24dp"
+        android:layout_gravity="bottom"/>
+
+
+</LinearLayout>

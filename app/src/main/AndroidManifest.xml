@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Home.PopUp.PopUp"></activity>
         <activity
             android:name=".Home.HomeActivity"
             android:label="@string/title_activity_home"
@@ -24,9 +25,7 @@
         <activity
             android:name=".Details"
             android:label="@string/title_activity_details"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
