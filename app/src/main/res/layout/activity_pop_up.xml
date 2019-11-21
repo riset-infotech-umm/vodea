@@ -20,7 +20,8 @@
         android:text="CREATE VOTE"
         android:textSize="18sp"
         android:layout_gravity="center"
-        android:elevation="8dp"/>
+        android:textStyle="bold"
+        android:elevation="10dp"/>
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
@@ -73,7 +74,8 @@
                 android:background="@drawable/corner_edit_text"
                 android:backgroundTint="#F61140"
                 android:layout_marginEnd="24dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                android:textColorHint="@android:color/white"/>
         </LinearLayout>
 
 
@@ -103,7 +105,8 @@
                 android:background="@drawable/corner_edit_text"
                 android:backgroundTint="#F61140"
                 android:layout_marginEnd="24dp"
-                android:layout_marginStart="12dp"/>
+                android:layout_marginStart="12dp"
+                android:textColorHint="@android:color/white"/>
         </LinearLayout>
 
         <Button
@@ -116,7 +119,8 @@
             android:background="@drawable/corner_edit_text"
             android:backgroundTint="#3079CC"
             android:layout_marginEnd="24dp"
-            android:layout_marginStart="24dp"/>
+            android:layout_marginStart="24dp"
+            android:textColorHint="@android:color/white"/>
     </LinearLayout>
 
     <Button

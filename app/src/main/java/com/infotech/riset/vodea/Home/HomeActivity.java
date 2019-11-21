@@ -1,6 +1,8 @@
 package com.infotech.riset.vodea.Home;
 
 import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -40,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                popUp.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 popUp.show();
             }
         });
