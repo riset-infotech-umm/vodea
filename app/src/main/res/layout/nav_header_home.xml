@@ -31,7 +31,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/group_email"
-        android:layout_width="280dp"
+        android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         app:layout_constraintEnd_toEndOf="@+id/NIM"
@@ -71,7 +71,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/group_handphone"
-        android:layout_width="280dp"
+        android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/group_email"
@@ -110,7 +110,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="280dp"
+        android:layout_width="250dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/group_email"
