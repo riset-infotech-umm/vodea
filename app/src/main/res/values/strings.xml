@@ -23,4 +23,11 @@
     <string name="dmy">dd-mm-yy</string>
     <string name="nomorhp">085536544446</string>
     <string name="surel">infotech@umm.ac.id</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
 </resources>
