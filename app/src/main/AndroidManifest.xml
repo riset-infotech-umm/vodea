@@ -26,10 +26,6 @@
             android:name=".Home.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Details"
-            android:label="@string/title_activity_details"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
