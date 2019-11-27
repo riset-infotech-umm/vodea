@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CREATE VOTE"
+        android:text="@string/create_vote"
         android:textSize="18sp"
         android:layout_gravity="center"
         android:textStyle="bold"

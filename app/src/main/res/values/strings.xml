@@ -30,4 +30,6 @@
     <string name="action_sign_in">Sign In</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
+    <string name="detail">Detail</string>
+    <string name="create_vote">CREATE VOTE</string>
 </resources>
