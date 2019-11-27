@@ -10,10 +10,9 @@
     <TextView
         android:id="@+id/detail_vote"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="19dp"
         android:text="@string/detail"
         android:layout_gravity="center"
-        android:gravity="bottom"
         android:textStyle="bold"
         android:textSize="14sp"
 
