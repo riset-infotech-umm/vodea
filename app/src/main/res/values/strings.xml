@@ -33,4 +33,6 @@
     <string name="detail">Detail</string>
     <string name="create_vote">CREATE VOTE</string>
     <string name="version">Version 1.0</string>
+    <string name="optionname">Options 1 name\'s................</string>
+    <string name="vote">Vote</string>
 </resources>
