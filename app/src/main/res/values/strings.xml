@@ -38,4 +38,7 @@
     <string name="search">Search</string>
     <string name="search_hint">Masukkan kata</string>
     <string name="voteOption">Tes VoteOption</string>
+    <string name="created">Created DD/MM/YYYY , hh:mm:ss</string>
+    <string name="Vote_Title">Vote Title</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
 </resources>
