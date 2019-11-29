@@ -3,6 +3,7 @@ package com.infotech.riset.vodea.Home;
 import android.app.Dialog;
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -11,9 +12,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -22,6 +26,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.infotech.riset.vodea.R;
+import com.infotech.riset.vodea.VoteOption.VoteOption;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -44,6 +49,7 @@ public class HomeActivity extends AppCompatActivity {
         popUp.setContentView(R.layout.activity_pop_up);
 
         FloatingActionButton fab = findViewById(R.id.fab);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -96,5 +102,16 @@ public class HomeActivity extends AppCompatActivity {
             });
         }
         return true;
+    }
+
+    // INI HANYA SEMENTARA, TESTING VOTE OPTIONS
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.tes_voteoption:
+                Intent intent = new Intent(HomeActivity.this, VoteOption.class);
+                startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

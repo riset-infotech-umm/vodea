@@ -31,10 +31,11 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="detail">Detail</string>
-    <string name="create_vote">CREATE VOTE</string>
+    <string name="create_vote">Create Vote</string>
     <string name="version">Version 1.0</string>
     <string name="optionname">Options 1 name\'s................</string>
     <string name="vote">Vote</string>
     <string name="search">Search</string>
     <string name="search_hint">Masukkan kata</string>
+    <string name="voteOption">Tes VoteOption</string>
 </resources>

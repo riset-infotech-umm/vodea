@@ -8,4 +8,11 @@
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="collapseActionView|ifRoom" />
         />
+
+    <item
+        android:id="@+id/tes_voteoption"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        android:title="@string/search"
+        app:showAsAction="collapseActionView|ifRoom" />
+        />
 </menu>
