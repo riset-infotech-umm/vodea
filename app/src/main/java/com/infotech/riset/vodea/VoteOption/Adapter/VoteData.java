@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class VoteData {
     private static String[] nama = {
             "Augie Winanda F", "Ricky Hendrawan", "Yusril",
-            "Fachry", "Mufidzzz"
+            "Fachry", "Mufidzzz", "INI SEMENTARA SAJA DITARUH SINI :*"
     };
 
     public static ArrayList<Vote> getListData() {
