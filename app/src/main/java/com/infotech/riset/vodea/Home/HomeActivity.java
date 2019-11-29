@@ -88,6 +88,7 @@ public class HomeActivity extends AppCompatActivity {
                     Toast.makeText(HomeActivity.this, query, Toast.LENGTH_SHORT).show();
                     return true;
                 }
+
                 @Override
                 public boolean onQueryTextChange(String newText) {
                     return false;
