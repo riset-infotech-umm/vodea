@@ -35,4 +35,6 @@
     <string name="version">Version 1.0</string>
     <string name="optionname">Options 1 name\'s................</string>
     <string name="vote">Vote</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Masukkan kata</string>
 </resources>
