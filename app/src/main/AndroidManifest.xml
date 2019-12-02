@@ -11,7 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".VoteOption"></activity>
+        <activity android:name=".About.AboutActivity"
+            android:theme="@style/AppThemeAbout">
+
+        </activity>
+        <activity android:name=".VoteOption" />
         <activity android:name=".DetailVote" />
         <activity android:name=".LoginRegister.RegisterActivity" />
         <activity android:name=".LoginRegister.LoginActivity" />
