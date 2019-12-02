@@ -16,6 +16,7 @@
 
         </activity>
         <activity android:name=".VoteOption" />
+        <activity android:name=".VoteOption.VoteOption"></activity>
         <activity android:name=".DetailVote" />
         <activity android:name=".LoginRegister.RegisterActivity" />
         <activity android:name=".LoginRegister.LoginActivity" />
