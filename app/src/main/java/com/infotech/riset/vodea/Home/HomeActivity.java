@@ -26,6 +26,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.infotech.riset.vodea.About.AboutActivity;
+import com.infotech.riset.vodea.Home.ui.RecyclerViewHome.VoteData;
+import com.infotech.riset.vodea.Home.ui.RecyclerViewHome.VoteModel;
 import com.infotech.riset.vodea.R;
 import com.infotech.riset.vodea.VoteOption.VoteOption;
 
@@ -33,10 +35,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private Dialog popUp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +83,10 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, AboutActivity.class));
             }
         });
+
     }
+
+
 
     @Override
     public boolean onSupportNavigateUp() {
