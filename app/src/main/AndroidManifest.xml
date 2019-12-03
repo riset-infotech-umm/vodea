@@ -7,11 +7,17 @@
         android:allowBackup="true"
         android:icon="@drawable/logo_putih"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_putih"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DetailVote"></activity>
+        <activity android:name=".About.AboutActivity"
+            android:theme="@style/AppThemeAbout">
+
+        </activity>
+        <activity android:name=".VoteOption" />
+        <activity android:name=".VoteOption.VoteOption"></activity>
+        <activity android:name=".DetailVote" />
         <activity android:name=".LoginRegister.RegisterActivity" />
         <activity android:name=".LoginRegister.LoginActivity" />
         <activity android:name=".SplashScreen">
@@ -25,10 +31,6 @@
         <activity
             android:name=".Home.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Details"
-            android:label="@string/title_activity_details"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

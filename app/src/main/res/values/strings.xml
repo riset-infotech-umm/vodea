@@ -8,7 +8,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Vodea</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -31,5 +30,14 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="detail">Detail</string>
-    <string name="create_vote">CREATE VOTE</string>
+    <string name="create_vote">Create Vote</string>
+    <string name="version">Version 1.0</string>
+    <string name="optionname">Options 1 name\'s................</string>
+    <string name="vote">Vote</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Masukkan kata</string>
+    <string name="voteOption">Tes VoteOption</string>
+    <string name="created">Created DD/MM/YYYY , hh:mm:ss</string>
+    <string name="Vote_Title">Vote Title</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
 </resources>
