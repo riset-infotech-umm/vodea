@@ -56,11 +56,23 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="12dp"
+       >
         <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:hint="delete"
+            android:background="@drawable/corner_edit_text"
+            android:backgroundTint="#F61140"
+
+            android:textColorHint="@android:color/white"/>
+        <Button
+            android:layout_alignParentEnd="true"
+            android:id="@+id/add_option"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
             android:layout_gravity="end"
@@ -71,14 +83,14 @@
             android:textColorHint="@android:color/white" />
 
         <Button
+            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:background="@drawable/corner_edit_text"
             android:backgroundTint="#F7941E"
             android:hint="Set Vote"
             android:textColorHint="@android:color/white" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>

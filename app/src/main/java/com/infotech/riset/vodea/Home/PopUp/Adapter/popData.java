@@ -4,23 +4,45 @@ import java.util.ArrayList;
 
 public class popData {
 
-    public static String[] data = new String[]{
-            "input 1",
-            "input 2",
-            "input 3"
-    };
 
-    private static ArrayList<String> list = new ArrayList<String>();
+    private int position;
+    private ArrayList<String> list;
 
-    public static ArrayList<PopModel> getData(){
-        ArrayList<PopModel> list = new ArrayList<>();
-        for (String aData: data
-             ) {
+    public popData(int position, ArrayList<String> list) {
+        this.position = position;
+        this.list = list;
+        list.add("input 1");
+
+
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+
+    public void addItem() {
+        position++;
+    }
+
+    public void deleteItem() {
+        position--;
+
+    }
+
+
+
+
+    public ArrayList<PopModel> getData() {
+        ArrayList<PopModel> listModel = new ArrayList<>();
+
+        for (int i = 0; i < list.size(); i++) {
             PopModel model = new PopModel();
-            model.setHint(aData);
-            list.add(model);
-
+            model.setHint(list.get(i));
+            listModel.add(model);
         }
-        return list;
+
+
+        return listModel;
     }
 }
