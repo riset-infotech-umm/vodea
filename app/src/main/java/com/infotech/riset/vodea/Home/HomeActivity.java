@@ -26,6 +26,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 import com.infotech.riset.vodea.About.AboutActivity;
+import com.infotech.riset.vodea.Home.PopUp.PopUp;
 import com.infotech.riset.vodea.Home.ui.RecyclerViewHome.VoteData;
 import com.infotech.riset.vodea.Home.ui.RecyclerViewHome.VoteModel;
 import com.infotech.riset.vodea.R;
@@ -42,7 +43,7 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
-    private Dialog popUp;
+
 
 
     @Override
@@ -53,16 +54,14 @@ public class HomeActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        popUp = new Dialog(this);
-        popUp.setContentView(R.layout.activity_pop_up);
+
 
         FloatingActionButton fab = findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                popUp.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                popUp.show();
+                startActivity(new Intent(HomeActivity.this, PopUp.class));
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

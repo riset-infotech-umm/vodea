@@ -12,7 +12,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/activity_horizontal_margin"
+        android:background="@drawable/corner_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,9 +28,9 @@
                 android:layout_height="60dp"
                 android:src="@color/colorPrimaryDark"
 
-                app:layout_constraintBottom_toBottomOf="@+id/VoteDesc"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/VoteDate" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/VoteDate"
@@ -38,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/created"
                 android:textSize="11sp"
+
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,9 +47,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:padding="2dp"
                 android:text="@string/Vote_Title"
                 android:textSize="14sp"
                 android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/FotoVoter"
                 app:layout_constraintTop_toBottomOf="@+id/VoteDate" />
 
@@ -60,7 +64,6 @@
                 android:maxLines="3"
                 android:text="@string/lorem"
                 app:layout_constraintBottom_toBottomOf="parent"
-
                 app:layout_constraintStart_toEndOf="@+id/FotoVoter"
                 app:layout_constraintTop_toBottomOf="@+id/VoteTitle" />
 

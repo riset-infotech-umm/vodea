@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:id="@+id/item_popup"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:hint="Option 1 Name's ..."
+            android:id="@+id/item_edit_popup"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/corner_edit_text"
+            />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="56dp"
+            android:layout_height="20dp"
+            android:hint="delete"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/corner_edit_text"
+            android:backgroundTint="#F61140"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="12dp"
+            android:textColorHint="@android:color/white"/>
+    </LinearLayout>
