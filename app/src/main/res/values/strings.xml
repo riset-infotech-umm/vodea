@@ -40,4 +40,5 @@
     <string name="created">Created DD/MM/YYYY , hh:mm:ss</string>
     <string name="Vote_Title">Vote Title</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="dialog_text">Do you sure want to unvote your vote? By clicking yes, you go back to vote session again.</string>
 </resources>

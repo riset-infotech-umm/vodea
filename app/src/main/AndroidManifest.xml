@@ -11,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".About.AboutActivity"
-            android:theme="@style/AppThemeAbout">
-
-        </activity>
+        <activity android:name=".Fragment_Dialog"></activity>
+        <activity
+            android:name=".About.AboutActivity"
+            android:theme="@style/AppThemeAbout"></activity>
         <activity android:name=".VoteOption" />
-        <activity android:name=".VoteOption.VoteOption"></activity>
-        <activity android:name=".DetailVote" />
+        <activity android:name=".VoteOption.VoteOption" />
+        <activity android:name=".DetailUnVote" />
         <activity android:name=".LoginRegister.RegisterActivity" />
         <activity android:name=".LoginRegister.LoginActivity" />
         <activity android:name=".SplashScreen">
