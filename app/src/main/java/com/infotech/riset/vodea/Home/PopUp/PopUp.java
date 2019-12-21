@@ -30,12 +30,13 @@ public class PopUp extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_pop_up);
 
         optionData = new popData(0,new ArrayList<String>());
-        optionData.addItem();
+        optionData.add("input 1");
+
 
         rvPopUp = findViewById(R.id.rv_popup);
         popModels.addAll(optionData.getData());
 
-        listPopUpAdapter = new PopUpAdapter(popModels,optionData);
+        listPopUpAdapter = new PopUpAdapter(popModels);
 
         rvPopUp.setAdapter(listPopUpAdapter);
 
@@ -59,16 +60,21 @@ public class PopUp extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.add_option:
-                popModels.add(optionData.getPosition(),new PopModel("input "+(optionData.getPosition()+1)));
-                listPopUpAdapter.notifyItemInserted(optionData.getPosition());
-                rvPopUp.scrollToPosition(optionData.getPosition());
-                optionData.addItem();
+
+                popModels.add(popModels.size(),new PopModel("input "+(popModels.size()+1)));
+                listPopUpAdapter.notifyItemChanged(popModels.size());
+                rvPopUp.scrollToPosition(popModels.size()-1);
+
                 break;
 
             case R.id.btn_delete:
-                optionData.deleteItem();
-                popModels.remove(optionData.getPosition());
-                listPopUpAdapter.notifyItemRemoved(optionData.getPosition());
+                if(popModels.size()>1){
+
+                    popModels.remove(popModels.size()-1);
+                    rvPopUp.scrollToPosition(popModels.size());
+                    listPopUpAdapter.notifyItemRemoved(popModels.size());
+                }
+
                 break;
         }
     }

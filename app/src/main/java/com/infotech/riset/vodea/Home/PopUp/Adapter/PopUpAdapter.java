@@ -15,11 +15,9 @@ import java.util.ArrayList;
 
 public class PopUpAdapter extends RecyclerView.Adapter<PopUpAdapter.listViewHolder> {
     private ArrayList<PopModel> listOption;
-    private popData data;
 
-    public PopUpAdapter(ArrayList<PopModel> listOption,popData data) {
+    public PopUpAdapter(ArrayList<PopModel> listOption) {
         this.listOption = listOption;
-        this.data=data;
     }
 
     @NonNull
@@ -33,7 +31,7 @@ public class PopUpAdapter extends RecyclerView.Adapter<PopUpAdapter.listViewHold
     public void onBindViewHolder(@NonNull listViewHolder holder, int position) {
         PopModel model = listOption.get(holder.getAdapterPosition());
         holder.tvEditOption.setHint(model.getHint());
-
+        holder.tvEditOption.setText("");
 
     }
 

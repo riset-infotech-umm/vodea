@@ -11,23 +11,19 @@ public class popData {
     public popData(int position, ArrayList<String> list) {
         this.position = position;
         this.list = list;
-        list.add("input 1");
-
 
     }
 
     public int getPosition() {
-        return position;
+        return list.size();
     }
 
 
-    public void addItem() {
-        position++;
-    }
 
-    public void deleteItem() {
-        position--;
 
+
+    public void add(String s){
+        list.add(s);
     }
 
 
