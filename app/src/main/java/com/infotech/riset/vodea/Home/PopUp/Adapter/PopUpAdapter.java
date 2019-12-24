@@ -31,7 +31,7 @@ public class PopUpAdapter extends RecyclerView.Adapter<PopUpAdapter.listViewHold
     public void onBindViewHolder(@NonNull listViewHolder holder, int position) {
         PopModel model = listOption.get(holder.getAdapterPosition());
         holder.tvEditOption.setHint(model.getHint());
-        holder.tvEditOption.setText("");
+
 
     }
 

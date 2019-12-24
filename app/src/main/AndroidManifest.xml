@@ -11,16 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Fragment_Dialog"></activity>
+        <activity android:name=".GoVote.GoVote"></activity>
+        <activity android:name=".Fragment_Dialog" />
         <activity
             android:name=".About.AboutActivity"
-            android:theme="@style/AppThemeAbout"></activity>
+            android:theme="@style/AppThemeAbout" />
         <activity android:name=".VoteOption.VoteOption" />
         <activity android:name=".DetailUnVote" />
         <activity android:name=".LoginRegister.RegisterActivity" />
-        <activity android:name=".LoginRegister.LoginActivity" >
-
-        </activity>
+        <activity android:name=".LoginRegister.LoginActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

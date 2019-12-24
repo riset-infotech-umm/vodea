@@ -5,11 +5,24 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <TextView
+        android:id="@+id/textView"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rvHome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Upcoming Vote"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHome"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView"
         tools:listitem="@layout/item_row_home"
+        android:paddingBottom="80dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

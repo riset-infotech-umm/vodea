@@ -43,7 +43,7 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
-
+    private Dialog dialog;
 
 
     @Override
@@ -55,15 +55,6 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, PopUp.class));
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -80,10 +71,24 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this, AboutActivity.class));
+
+            }
+        });
+        dialog = new Dialog(this);
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, PopUp.class));
+
             }
         });
 
+
     }
+
 
 
 

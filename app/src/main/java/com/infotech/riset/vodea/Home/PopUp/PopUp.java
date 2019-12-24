@@ -61,9 +61,11 @@ public class PopUp extends AppCompatActivity implements View.OnClickListener {
         switch (view.getId()){
             case R.id.add_option:
 
-                popModels.add(popModels.size(),new PopModel("input "+(popModels.size()+1)));
-                listPopUpAdapter.notifyItemChanged(popModels.size());
-                rvPopUp.scrollToPosition(popModels.size()-1);
+                if (popModels.size()<7){
+                    popModels.add(popModels.size(),new PopModel("input "+(popModels.size()+1)));
+                    listPopUpAdapter.notifyItemChanged(popModels.size());
+                    rvPopUp.scrollToPosition(popModels.size()-1);
+                }
 
                 break;
 
