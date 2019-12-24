@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
 
     private void showRecyclerList() {
         rvHome.setLayoutManager( new LinearLayoutManager(this.getActivity()));
-        ListHomeAdapter listHomeAdapter= new ListHomeAdapter(list);
+        ListHomeAdapter listHomeAdapter= new ListHomeAdapter(list,getContext());
         rvHome.setAdapter(listHomeAdapter);
 
     }
