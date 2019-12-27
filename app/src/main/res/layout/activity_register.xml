@@ -7,6 +7,7 @@
     tools:context=".LoginRegister.RegisterActivity">
 
     <Button
+        android:foreground="?android:attr/selectableItemBackground"
         android:id="@+id/sign_up"
         android:layout_width="110dp"
         android:layout_height="35dp"

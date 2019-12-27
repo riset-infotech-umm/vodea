@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:foreground="?android:attr/selectableItemBackground"
         android:id="@+id/login"
         android:layout_width="110dp"
         android:layout_height="35dp"
