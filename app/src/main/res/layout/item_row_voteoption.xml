@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="@dimen/activity_horizontal_margin"
-    android:padding="4dp">
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="-4dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin">
 
     <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
