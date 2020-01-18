@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout
-        android:id="@+id/item_popup"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
-
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:hint="Option 1 Name's ..."
             android:id="@+id/item_edit_popup"
-            android:padding="12dp"
-            android:textSize="12sp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
             android:background="@drawable/corner_edit_text"
-            />
+            android:hint="Option 1 Name's ..."
+            android:padding="12dp"
+            android:textSize="12sp" />
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

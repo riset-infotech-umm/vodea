@@ -15,7 +15,7 @@
         <activity android:name=".Fragment_Dialog" />
         <activity
             android:name=".About.AboutActivity"
-            android:theme="@style/AppThemeAbout" />
+            android:theme="@style/AppTheme" />
         <activity android:name=".VoteOption.VoteOption" />
         <activity android:name=".DetailUnVote" />
         <activity android:name=".LoginRegister.RegisterActivity" />
@@ -23,11 +23,12 @@
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home.PopUp.PopUp" />
+        <activity
+            android:name=".Home.PopUp.PopUp"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".Home.HomeActivity"
             android:label="@string/title_activity_home"
